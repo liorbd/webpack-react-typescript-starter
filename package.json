@@ -9,23 +9,38 @@
     "release": "webpack --config webpack/webpack.production.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.56",
-    "@babel/preset-env": "^7.0.0-beta.56",
-    "@types/react": "^16.4.13",
-    "@types/react-dom": "^16.0.7",
-    "babel-loader": "^8.0.0-beta",
-    "clean-webpack-plugin": "^0.1.19",
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@hot-loader/react-dom": "^16.8.6",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "^4.1.18",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
     "html-webpack-plugin": "^3.2.0",
-    "source-map-loader": "^0.2.3",
-    "ts-loader": "^4.4.2",
-    "typescript": "^3.0.1",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5",
-    "webpack-merge": "^4.1.4"
+    "prettier": "^1.18.2",
+    "react-hot-loader": "^4.12.6",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
   }
 }

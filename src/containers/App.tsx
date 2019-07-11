@@ -1,7 +1,16 @@
+import { hot } from 'react-hot-loader/root';
 import * as React from 'react';
+import styled from 'styled-components';
 
-export class App extends React.Component<any, any> {
+const Title = styled.h1<{ size: number }>`
+    color: darkolivegreen;
+    font-size: ${({ size }) => size}px;
+`;
+
+class App extends React.Component {
     public render() {
-        return <h1>Hello World!</h1>
+        return <Title size={24}>Hello World!</Title>;
     }
 }
+
+export default hot(App);

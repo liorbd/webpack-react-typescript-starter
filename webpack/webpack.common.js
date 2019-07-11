@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const webpack = require("webpack");
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
             },
             {
                 test: /\.tsx?$/,
-                loader: "ts-loader"
+                loader: "babel-loader"
             },
             {
                 enforce: "pre",
@@ -31,12 +31,13 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [".ts", ".tsx", ".js"]
+        extensions: [".ts", ".tsx", ".js"],
+        alias: {
+            'react-dom': '@hot-loader/react-dom'
+        }
     },
     plugins: [
-        new CleanWebpackPlugin(['public'], {
-            root: path.resolve(__dirname, '..'),
-        }),
+        new CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin({}),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../src/index.html'),
