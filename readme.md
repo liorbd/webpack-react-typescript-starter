@@ -1,4 +1,9 @@
-# Webpack-React-TypeScript-Starter
+# Really simple react + typescript starter
+## Features included:
+###
+1. React
+2. Styled Components
+3. react-hot-loader for smooth development experience
 ## Installation:
 ```$xslt
 git clone https://github.com/liorbd/webpack-react-typescript-starter.git
